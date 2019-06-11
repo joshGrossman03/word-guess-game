@@ -13,61 +13,71 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
- 
-  <div class="container-fluid">
+
+  <div id="webPage" class="container-fluid" style="background-image: url('assets/images/435606.jpg')">
     <div class="row">
       <div class="col-12">
-          <h2 id="famousBands" class="text-center">Famous Bands Word Guess</h2>
+        <h2 id="famousBands" class="text-center">Famous Bands Word Guess</h2>
       </div>
     </div>
     <div class="row">
-   
+
       <div class="col-12">
         <div class="card">
-          <div align="center" class="card-body thumbnail align-contents-center" id=wordDisplay>
-        <h1 id="currentword"></h1>
-      </div>
-      </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="text-center">Press Any Letter to Make a Guess!</h3>
+          <div align="center" class="card-body align-contents-center" id=wordDisplay>
+            <h1 id="currentword"></h1>
+          </div>
+        </div>
       </div>
     </div>
+   
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
         <div class="card">
           <div class="card-body thumbnail align-contents-center">
-        <img id="albumCover" src="assets/images/album.jpg" alt="" style="width:100%; height: 100%;">
-      </div>
-      </div>
+            <img id="albumCover" src="assets/images/album.jpg" alt="" style="width:100%; height: 100%;">
+          </div>
+        </div>
       </div>
       <div class="col-4"></div>
-    
+
     </div>
-    <div class="row bg-info" id="scoreBoard">
+    <div class="row bg-dark">
+        <div class="col-lg-12">
+          <h3 class="text-center blink_me">Press Any Letter to Make a Guess!</h3>
+        </div>
+      </div>
+    <div align="center" class="row bg-dark" id="scoreBoard">
       <div class="col">
         <table>
           <tr>
-            <h3 class="text-center"> Wins: <span id="winstracker"></span></h3>
+            <th>
+              <h3>Wins</h3>
+            </th>
+            <th>
+              <h3>Losses</h3>
+            </th>
+            <th>
+              <h3>Guesses Remaining</h3>
+            </th>
+            <th>
+              <h3>Wrong Guesses</h3>
+            </th>
           </tr>
           <tr>
-            <h3 class="text-center">Losses: <span id="losstracker"></span></h3>
-          </tr>
-          <tr>
-              <h3 class="text-center"> Guesses Remaining: <span id="guessesremaining"></span></h3>
-            </tr>
-          <tr>
-            <h3 class="text-center">Wrong Guesses: <span id="playerguesses"></span></h3>
+            <td><span id="winstracker"></span></td>
+            <td><span id="losstracker"></span></td>
+            <td><span id="guessesremaining"></span></td>
+            <td><span id="playerguesses"></span></td>
           </tr>
         </table>
       </div>
@@ -80,29 +90,30 @@
     <audio controls id="queen" style="display: none">
       <source src="assets/audio/queen.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="aerosmith"style="display: none">
+    <audio controls id="aerosmith" style="display: none">
       <source src="assets/audio/aerosmith.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="altj"style="display: none">
+    <audio controls id="altj" style="display: none">
       <source src="assets/audio/altj.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="rainbowkittensurprise"style="display: none">
+    <audio controls id="rainbowkittensurprise" style="display: none">
       <source src="assets/audio/rainbowkittensurprise.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="u2"style="display: none">
+    <audio controls id="u2" style="display: none">
       <source src="assets/audio/u2.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="journey"style="display: none">
+    <audio controls id="journey" style="display: none">
       <source src="assets/audio/journey.mp3" type="audio/mp3">
     </audio>
-    <audio controls id="beastieboys"style="display: none">
+    <audio controls id="beastieboys" style="display: none">
       <source src="assets/audio/beastieboys.mp3" type="audio/mp3">
     </audio>
-  
-  </div>
-  
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+  </div>
+
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>

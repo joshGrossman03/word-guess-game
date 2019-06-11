@@ -1,7 +1,39 @@
 #wordDisplay{
-    background-color: blue;
+    color:#ccc;
+    background-color: black;
 }
 
 #famousBands{
-background-color: aquamarine;
+color:#ccc;
 }
+
+.container-fluid{
+    background-image: url('/assets/images/435606.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div{
+    color:#ccc;
+    font-family: 'Asap', sans-serif;
+}
+th {
+    
+    padding: 15px;
+    text-align: left;
+      
+  }
+  td{padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+  }
+
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
